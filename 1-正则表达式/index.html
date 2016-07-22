@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>正则表达式</title>
+		<link rel="stylesheet" href="css/style.css" />        
+	</head>
+	<body>
+
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js" ></script>
+		<script type="text/javascript">
+			// test()检索字符串中的指定值返回true或者false
+			var demo1=/sb/;
+			var text1="you are a sb"
+			console.log(demo1.test(text1));//true
+
+
+			//exec()检索字符串中指定值，返回找到的值，没有找到返回null
+			var demo2=/nb/;
+			var text2=" you are so niubi";
+			console.log(demo2.exec(text2));//null
+            text2=" you are so nb";
+			console.log(demo2.exec(text2));//["nb", index: 12, input: " you are so nb"]
+
+
+
+			//正则表达式的两个参数  i  忽略大小写   g  全局查找
+			var demo3=/SIBI/i;
+			var text3="you like sibi";
+			//match 字符串匹配
+			//注意顺序，是文本match正则
+			console.log(text3.match(demo3));//["sibi", index: 9, input: "you like sibi"]
+           var demo4=/mdzz/gi;
+           var text4="MDZZ ni ge sa bi mdzz ";
+           console.log(text4.match(demo4));//["MDZZ", "mdzz"]
+
+
+           //search字符串查找
+           var demo5=/nc/;
+           var text5="ni jiu shi ge nc";
+           console.log(text5.search(demo5));//14
+           //match 字符串匹配 
+           var text6="1 2 3 d e f  78";
+           console.log(text6.match(/\d+/g));//["1", "2", "3", "78"]
+           //具体参见  http://www.w3school.com.cn/jsref/jsref_obj_regexp.asp
+           //replace 字符串替换,替换后原字符串不改变
+           var text7="sb sb sb sb sb "
+           console.log(text7.replace(/sb/g,"nb"));//nb nb nb nb nb 
+           //split 字符串分割
+           var text8="hello I am a Front End Engineer";
+           console.log(text8.split(" "));
+           console.log(text8.split(/\s+/));
+		</script>		
+	</body>
+</html>
