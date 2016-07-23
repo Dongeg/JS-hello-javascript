@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XMLHttpRequest</title>
+</head>
+<body>
+	<p>1.创建XMKHttpRequeat对象</p>
+	<p>   var xhr=new XMLHttpRequest();   </p>
+	<p>方法</p>
+	<li>open(method,url,asnyc)</li>
+	<li>send(string)</li>
+	<script>
+		var request=new XMLHttpRequest();
+		request.open("GET","get.php",true);
+		request.send();
+		request.onreadystatechange=function(){
+			if(request.readyState===4&&request.status===200){
+				//do something
+			}
+		}
+	</script>
+</body>
+</html>

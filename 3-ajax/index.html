@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ajax</title>
+	<style>
+		#container{
+			width: 310px;
+			margin: 50px auto;
+		}
+		#keyword{
+			width: 250px;
+			height: 30px;
+			float: left;
+		}
+		#searchbtn{
+			width: 50px;
+			height: 36px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div>
+		<div id="searchbox">
+			<input type="text" id="keyword">
+			<button id="searchbtn">搜索</button>
+			<ul id="hits"></ul>
+		</div>
+		
+	</div>	
+</div>
+<script>
+    document.getElementById("keyword").oninput=function(){
+    	var keyword=this.value;
+    	//1.创建XMLHttpRequest对象
+    	var xhr=new XmlHttpRequest();
+    	//2.open操作初始化请求信息
+    	xhr.open()
+    }
+</script>
+</body>
+</html>

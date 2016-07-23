@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js异常捕获</title>
+</head>
+<body>
+    <input type="text" id="txt">
+    <button id="btn"> click me</button>
+	<script>
+		function demo1(){
+			//try{}一定执行，catch在发生错误时执行
+            try{
+            	alert(sjssjs);
+            }
+            catch(err){
+            	alert(err);
+            }
+		}
+		demo1();
+
+        //throw 自定义错误提示
+        var txt=document.getElementById("txt");
+        var btn=document.getElementById("btn");
+        btn.onclick=function(){
+             try{
+             	 if(txt.value==""){
+        		    throw "null";
+        	       }
+                }catch(err){
+                	alert(err)
+                }
+        }
+		function demo2(){
+             
+		}
+	</script>
+</body>
+</html>
