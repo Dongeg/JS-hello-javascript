@@ -37,8 +37,18 @@
     	//1.创建XMLHttpRequest对象
     	var xhr=new XmlHttpRequest();
     	//2.open操作初始化请求信息
-    	xhr.open()
+    	xhr.open('GET','keyword/hit?keyword='+encodeURIComponent(keyword),true);
+    	//encodeURIComponent() 函数作用：可把字符串作为URI 组件进行编码
+    	//3.监听事件处理响应结果
+    	xhr.onreadystatechange=function(){
+           if(xhr.readyState==4&&xhr.status==200){
+                  handleResult(xhr.responseText);
+           }
+    	}
+    	//4.发出请求
+    	xhr.send();
     }
+
 </script>
 </body>
 </html>
