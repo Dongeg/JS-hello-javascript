@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="css/Normalize-4.1.1.css" />
+	<link rel="stylesheet" href="css/style.css" />  
+</head>
+	<body>
+		<!--1. html5自带表单验证-->
+        <!--required属性规定必需在提交之前填写输入字段
+            pattern  是正则表达式,  里面可以直接填写正则表达式-->
+	    <div class="contaner">
+	    	<h3 class="title">html5自带表单验证</h3>
+	    	<div class="main">
+	    		<form>
+	    			<span>Name:</span>
+	    			<!--非空 required="" -->
+	    			<p><input type="text" required="" /></p>    
+	    			<span>phone:</span>
+	    			<!--注意正则表达式不需要加两边的  /   /    -->
+	    			<!--title的值会显示在提示中-->
+	    			<p><input type="text" pattern="0?(13|14|15|18)[0-9]{9}" title="手机号码格式错误" /></p>
+	    			<span>Email:</span>
+	    			<p><input type="email" pattern="\w+((-w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+" /></p>
+	    			<span>Password:</span>
+	    			<p><input type="password" pattern="^[A-Za-z0-9_-]+$" /></p>
+
+	    			
+	    			<p><input type="submit" value="sign up" class="sign-up" /></p>	    			
+	    		</form>
+	    	</div>
+	    </div>
+	    
+        <!--js 表单验证-->	    
+	    <div class="contaner">
+	    	<h3 class="title">js 表单验证</h3>
+	    	<div class="main" id="jsShow">
+	    		<form>
+	    			<span>Name:</span>
+	    			<p><input type="text" id="name"/></p>
+	    			<div class="prompt put" id="name-prompt"></div>
+	    			<span>phone:</span>	 
+	    			<p><input type="text" id="phone" /></p>
+	    			<div class="prompt put" id="phone-prompt"></div>
+	    			<span>Email:</span>
+	    			<p><input type="text" id="email" /></p>
+	    			<div class="prompt put" id="email-prompt"></div>
+	    			<span>Password:</span>
+	    			<p><input type="password" id="password" /></p>
+	    			<div class="prompt put" id="password-prompt"></div>
+	    			<p><input type="submit" value="sign up" class="sign-up" id="submit" /></p>
+	    			<div class="prompt" id="submit-prompt"></div>
+	    		</form>
+	    	</div>
+	    </div>	    
+	    
+	    
+	    
+	    
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js" ></script>
+		<script type="text/javascript" src="js/script.js" ></script>		
+	</body>
+</html>

@@ -1,0 +1,9 @@
+$(function(){
+	$("#btn").bind('click',function(){
+		$.get("server.php",{name:$("#namevalue").val()},function(data){
+			$("#result").text(data);
+		}).error(function(){
+             $("#result").text("error")
+		});
+	})
+})
