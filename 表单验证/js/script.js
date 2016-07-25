@@ -1,8 +1,8 @@
 $(function(){
 	var inputs=$(".put");
 	var prompts=$(".prompt");
-	console.log(inputs);
-	console.log(prompts);
+	console.log(inputs[1].value);
+	console.log(prompts[1]);
 	$("#name").bind('blur',function(){
 		if($(this).val()==""){
 			$("#name-prompt").text("该字段不能为空");
@@ -44,9 +44,21 @@ $(function(){
 			$("#password-prompt").text("");
 		}
 	});	
-//	for(var i=0;i<inputs.length;i++){
-//		if($(prompts[i].text())!=""){
-//			$("#submit").click(function(event){ event.preventDefault(); })
-//		}
-//	}
+   $("#submit").bind('click',function(event){
+   	    for(var i=0;i<inputs.length;i++){
+   	    	var index=i;
+   	    	//因为input[i]是数组中的一个对象，所以不能用val()
+   	    	if(inputs[i].value==""){
+   	    		event.preventDefault();
+   	    		$(inputs[i]).parent().next().text("信息未填写或格式错误");
+   	    	}
+   	    }
+// 	    for(var j=0;j<prompts.length;j++){
+// 	    	console.log(prompts[j]);
+// 	    	if(prompts[j]!=""){
+// 	    		
+// 	    		event.preventDefault();
+// 	    	}
+// 	    }
+   })
 })
