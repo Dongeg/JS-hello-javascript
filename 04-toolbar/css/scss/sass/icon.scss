@@ -1,0 +1,85 @@
+@import "iconFont";
+$toolbar-size:52px;
+.toolbar{
+    position: fixed;
+    left: 50%;
+    bottom: 5px;
+    margin-left: -$toolbar-size / 2;
+}
+.toolbar-item{
+    position: relative;
+    display: block;
+    width: $toolbar-size;
+    height: $toolbar-size;
+    margin-top: 1px;
+    
+    &:hover{
+       .toolbar-icon{
+           top: - $toolbar-size;
+       } 
+       .toolbar-text{
+           top: 0;
+       }
+       .toolbar-layer{
+           opacity: 1;
+           transform: scale(1);
+       }
+    }
+}
+.toolbar-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $toolbar-size;
+    height: $toolbar-size;
+    overflow: hidden;
+}
+.toolbar-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $toolbar-size;
+    height: $toolbar-size;
+    background-color: #d0d6d9;  
+    font-size: 30px;
+    color: #fff;
+    line-height: $toolbar-size;
+    text-align: center;
+    transition:all 0.35s; 
+}
+.toolbar-text{
+    position: absolute;
+    top: $toolbar-size;
+    left: 0;
+    width: $toolbar-size;
+    height: $toolbar-size;
+    background-color: #98a1a6;  
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 12px;
+    text-align: center;
+    transition:all 0.35s; 
+
+}
+.toolbar-layer{
+    position: absolute;
+    right: $toolbar-size;
+    bottom: -10px;
+    width: 172px;
+    background-image: url(../../../img/toolbar_img.png);
+    background-repeat:no-repeat ;
+    opacity: 0;
+    transform-origin:95% 95%;
+    transform: scale(0.01);
+    transition:all 0.35s; 
+}
+.toolbar-item-weixin{
+    height: 212px;
+    background-position: 0 0;
+}
+.toolbar-item-app{
+    height: 194px;
+    background-position: 0 -222px;
+}
+

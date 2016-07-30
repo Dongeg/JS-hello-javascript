@@ -1,0 +1,13 @@
+//定义别名
+require.config({
+	paths:{
+		jquery:'jquery-3.1.0.min'
+	}
+});
+//requirejs()方法的第一个参数是一个数组，存放要引入的模块，第二个参数是一个回调函数
+//参数$用来代替传入的模块名
+//创建validate.js在里面编写模块并将其引入
+requirejs(['jquery','validate'],function($,validate){
+	$('body').css('background-color','cornflowerblue');
+	console.log(validate.isEqual(1,2));
+})
