@@ -1,0 +1,405 @@
+body{
+   font-family: "微软雅黑";
+   font-size: 13px;
+   background: url(../../../img/1.jpg);
+   background-repeat:no-repeat ;
+   min-width: 1130px; 
+   min-height: 600px;
+   position: relative;
+}
+.main{
+    width: 100%;
+    height: 100%;
+
+}
+.nav{
+    width: 100%;
+    height: 43px;
+    background-color: #333;
+    .nav-left{
+        float: left;
+        ul{
+            margin: 0;
+            li{
+                list-style: none;
+                display: inline-block;
+                color: #acacac; 
+                line-height: 43px;
+                padding-left: 30px;
+                a{
+                  color: #acacac; 
+                  text-decoration: none; 
+                  &:hover{
+                    color: #fff;  
+                  }
+                }
+            }
+        }        
+    }
+    .nav-right{
+        float: right;
+        margin-right: 50px;
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                display: inline-block;
+                color: #acacac; 
+                height: 43px;
+                line-height: 43px;
+                padding-left: 20px;
+                a{
+                  display: inline-block;
+                  color: #acacac; 
+                  text-decoration: none;
+                  line-height: 43px; 
+                  &:hover{
+                    color: #fff; 
+                  }
+                }
+
+            }
+        }
+    }
+}
+.switch-English{
+    span{
+        vertical-align: middle;
+        display: inline-block;
+        width:30px;
+        height:30px;
+        background: url(../../../img/earth.png);
+        background:{
+            repeat:no-repeat;
+            position: -5px,-5px;
+            
+        }
+                
+    }
+    &:hover{
+           span{
+               background-position:-35px 0px ;
+           }
+   } 
+}
+.user{
+    position: relative;
+    width: 80px;
+    img{
+        width: 50px;
+        position: absolute;
+        left: 30px;
+        border-radius:50% ;
+        z-index: 1;
+    }
+}
+.seting{
+    position: relative;
+    span{
+        display: inline-block;
+        width: 20px;
+        height: 22px;
+        vertical-align: middle;
+        background: url(../../../img/icon.png);
+        background-position: -191px -148px;
+        &:hover{
+          background-position: -169px -148px;  
+        }
+        
+    }
+}
+#seting-main{
+    display: none;
+    width: 175px;
+    height: 70px;
+    line-height:0px;
+    background-color: #fff;
+    position: absolute;
+    right:5px;
+    top: 43px;
+    span{
+        display: inline-block;
+        line-height: 35px;
+        height: 30px;
+        width: 100%;
+        padding-left: 5px;
+        a{
+            color: blue;
+        }
+    }
+}
+.office{
+    position: relative;   
+}
+#office:hover .office-main{
+    display: block
+}
+.office-main{
+    display: none;
+    position: absolute;
+    left: 454px;
+    top: 43px;
+    width: 350px;
+    height: 330px;
+    z-index: 1;
+    background: rgba(51,51,51,0.7);
+    a{
+        display: inline-block;
+        float: left;
+        width: 114px;
+        height: 92px;
+        line-height:0;
+        text-align: center;
+        padding-top: 15px;
+        span{
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background: url(../../../img/office.png);
+            background-repeat:no-repeat ;
+        }
+        .office-main-icon1{
+           background-position: 0 0;
+        }
+        .office-main-icon2{
+           background-position:-48px 0 ;
+        }
+        .office-main-icon3{
+           background-position:-96px 0;
+        }
+        .office-main-icon4{
+           background-position:-144px 0;
+        }
+        .office-main-icon5{
+           background-position:-192px  0;
+        }
+        .office-main-icon6{
+           background-position:-242px 0;
+        }
+        .office-main-icon7{
+           background-position: -291px 0;
+        }
+        .office-main-icon8{
+           background-position:-339px 0;
+        }
+        .office-main-icon9{
+           background-position:-388px 0;
+        }
+        label{
+            display: inline-block;
+            height: 20px;
+            width: 100%;
+            line-height: 20px;
+            margin-bottom: 15px;
+            
+        }
+    }
+}
+.content{
+    width: 100%;
+    height: 90%;
+    min-height:562px;
+}
+.focus-bg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 90%;
+    min-height:562px;
+    background-color:rgba(51,51,51,0.7) ;
+    display: none;
+    opacity: 0;
+    transition: all 0.35s;
+    
+}
+.bg-toggle{
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.search{
+    position: absolute;
+    left: 120px;
+    top: 110px;
+    width: 700px;
+    height: 50px;
+    .logo{
+       position: absolute;
+       top: -5px;
+       left: 20px;
+       display: inline-block;
+       width: 107px;
+       height: 53px;
+       background: url(../../../img/bing.png); 
+    }
+    form{
+        display: inline-block;
+        float: right;
+        input{
+            width: 500px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 20px;
+        }
+        button{
+            float: right;
+            width: 50px;
+            height: 50px;
+            cursor:pointer;
+            background: url(../../../img/icon.png);
+            background-repeat: no-repeat;
+            background-position: -157px -56px; 
+            background-color:rgb(52,83,145);
+            border: 1px solid rgb(52,83,145);           
+        }
+    }
+}
+.tools{
+    position: absolute;
+    bottom: 70px;
+    right: 30px;
+    span{
+        display: inline-block;
+        width: 41px;
+        height: 41px;
+        background: url(../../../img/媒体.png);
+        background-repeat: no-repeat;
+        margin-left: 15px;
+    }
+    .shear{
+        background-position: 0px 0px;
+        &:hover{
+            background-position: -294px 0px;
+            .shear-content{
+                opacity: 1;
+                transform: translate(0,0);
+            }
+        }
+    }
+    .ma{
+        display: inline-block;
+        position: relative;
+        width: 41px;
+        height: 41px;
+        background: url(../../../img/二维码.png);
+        background-repeat:no-repeat ;
+        margin-left: 15px;
+        background-position: 1px 1px;
+        &:hover{
+            background-position: -40px 0px;
+        }
+        .ma-main{
+            display: none;
+            background-color:rgba(51,51,51,0.7) ;
+            position: absolute;
+            width: 145px;
+            height:181px;
+            top: -300px;
+            left: -55px;
+            text-align: center;
+            .ma-main-pic{
+                
+                padding-top: 15px;
+                width: 145px;
+                height: 165px;
+                border: 1px solid #fff;
+                label{
+                    color:#fff;
+                }
+            }
+        }
+        .line{
+            display: none;
+            position: absolute;
+            top: -118px;
+            left: 20px;
+            width: 1px;
+            height: 118px;
+            border-left: 1px solid #fff;
+        }
+    }
+    
+    .turn-left{
+        background-position: 0px -83px;
+        &:hover{
+            background-position: -294px -83px;
+        }
+    }
+    .turn-right{
+        background-position: 0px -125px;
+        &:hover{
+            background-position: -294px -125px;
+        }
+    }
+    .inform{
+        background-position: 0px -41px;
+        &:hover{
+            background-position: -294px -41px;
+        }
+    }
+    #shear{
+        display:inline-block;
+        height: 41px;
+    }
+    
+    
+    .shear-content{
+        transform: translate(10px,0px);
+        opacity: 0;
+        transform-origin: right;
+        transition: opacity  0.35s;
+        transition: transform  0.35s;
+    }
+    .qzone{
+        background-position: 0px -294px;
+        &:hover{
+            background-position: -294px -294px;
+        }        
+    }
+    .weibo{
+        background-position: 0px -251px;
+        &:hover{
+            background-position: -294px -251px;
+        }        
+    }
+    .wechat{
+        background-position: 0px -210px;
+        &:hover{
+            background-position: -294px -210px;
+        }        
+    }
+
+       
+}
+.footer{
+    width: 100%;
+    height: 38px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:#333;
+    ul{
+        padding: 0;
+        margin: 0;
+        float: right;
+        padding-right: 30px;
+        li{
+            list-style: none;
+            display: inline-block;
+            height: 38px;
+            line-height: 38px;
+            color: #666;
+            margin-right:5px ;
+            a{
+                text-decoration: none;
+                color: #666;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
