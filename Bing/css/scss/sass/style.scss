@@ -1,11 +1,12 @@
 body{
    font-family: "微软雅黑";
    font-size: 13px;
-   background: url(../../../img/1.jpg);
+   background-image: url(../../../img/1.jpg);
    background-repeat:no-repeat ;
    min-width: 1130px; 
    min-height: 600px;
    position: relative;
+   transition: background-image 1s;
 }
 .main{
     width: 100%;
@@ -244,16 +245,36 @@ body{
             line-height: 45px;
             font-size: 20px;
         }
-        button{
+        .submit{
             float: right;
             width: 50px;
             height: 50px;
             cursor:pointer;
             background: url(../../../img/icon.png);
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; 
             background-position: -157px -56px; 
             background-color:rgb(52,83,145);
             border: 1px solid rgb(52,83,145);           
+        }
+        .prompt{
+            display: none;
+            position: absolute;
+            background-color: #FFF;
+            width: 552px;
+            ul{
+                padding: 0;
+                margin: 0;
+                li{
+                    list-style: none;
+                    height: 50px;
+                    line-height: 50px;
+                    padding-left: 10px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgb(245,245,245);
+                    }
+                }
+            }
         }
     }
 }

@@ -3,34 +3,35 @@
 body {
   font-family: "微软雅黑";
   font-size: 13px;
-  background: url(../../../img/1.jpg);
+  background-image: url(../../../img/1.jpg);
   background-repeat: no-repeat;
   min-width: 1130px;
   min-height: 600px;
   position: relative;
+  transition: background-image 1s;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
 .main {
   width: 100%;
   height: 100%;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 .nav {
   width: 100%;
   height: 43px;
   background-color: #333;
 }
-/* line 19, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 .nav .nav-left {
   float: left;
 }
-/* line 21, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .nav .nav-left ul {
   margin: 0;
 }
-/* line 23, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .nav .nav-left ul li {
   list-style: none;
   display: inline-block;
@@ -38,26 +39,26 @@ body {
   line-height: 43px;
   padding-left: 30px;
 }
-/* line 29, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .nav .nav-left ul li a {
   color: #acacac;
   text-decoration: none;
 }
-/* line 32, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .nav .nav-left ul li a:hover {
   color: #fff;
 }
-/* line 39, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .nav .nav-right {
   float: right;
   margin-right: 50px;
 }
-/* line 42, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 .nav .nav-right ul {
   margin: 0;
   padding: 0;
 }
-/* line 45, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 .nav .nav-right ul li {
   list-style: none;
   display: inline-block;
@@ -66,19 +67,19 @@ body {
   line-height: 43px;
   padding-left: 20px;
 }
-/* line 52, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .nav .nav-right ul li a {
   display: inline-block;
   color: #acacac;
   text-decoration: none;
   line-height: 43px;
 }
-/* line 57, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .nav .nav-right ul li a:hover {
   color: #fff;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .switch-English span {
   vertical-align: middle;
   display: inline-block;
@@ -88,17 +89,17 @@ body {
   background-repeat: no-repeat;
   background-position: -5px,-5px;
 }
-/* line 81, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .switch-English:hover span {
   background-position: -35px 0px;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .user {
   position: relative;
   width: 80px;
 }
-/* line 89, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .user img {
   width: 50px;
   position: absolute;
@@ -107,11 +108,11 @@ body {
   z-index: 1;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .seting {
   position: relative;
 }
-/* line 99, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .seting span {
   display: inline-block;
   width: 20px;
@@ -120,12 +121,12 @@ body {
   background: url(../../../img/icon.png);
   background-position: -191px -148px;
 }
-/* line 106, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .seting span:hover {
   background-position: -169px -148px;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 #seting-main {
   display: none;
   width: 175px;
@@ -136,7 +137,7 @@ body {
   right: 5px;
   top: 43px;
 }
-/* line 121, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 #seting-main span {
   display: inline-block;
   line-height: 35px;
@@ -144,22 +145,22 @@ body {
   width: 100%;
   padding-left: 5px;
 }
-/* line 127, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 #seting-main span a {
   color: blue;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .office {
   position: relative;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 #office:hover .office-main {
   display: block;
 }
 
-/* line 138, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .office-main {
   display: none;
   position: absolute;
@@ -170,7 +171,7 @@ body {
   z-index: 1;
   background: rgba(51, 51, 51, 0.7);
 }
-/* line 147, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .office-main a {
   display: inline-block;
   float: left;
@@ -180,7 +181,7 @@ body {
   text-align: center;
   padding-top: 15px;
 }
-/* line 155, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .office-main a span {
   display: inline-block;
   width: 48px;
@@ -188,43 +189,43 @@ body {
   background: url(../../../img/office.png);
   background-repeat: no-repeat;
 }
-/* line 162, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .office-main a .office-main-icon1 {
   background-position: 0 0;
 }
-/* line 165, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .office-main a .office-main-icon2 {
   background-position: -48px 0;
 }
-/* line 168, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .office-main a .office-main-icon3 {
   background-position: -96px 0;
 }
-/* line 171, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .office-main a .office-main-icon4 {
   background-position: -144px 0;
 }
-/* line 174, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .office-main a .office-main-icon5 {
   background-position: -192px  0;
 }
-/* line 177, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .office-main a .office-main-icon6 {
   background-position: -242px 0;
 }
-/* line 180, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .office-main a .office-main-icon7 {
   background-position: -291px 0;
 }
-/* line 183, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .office-main a .office-main-icon8 {
   background-position: -339px 0;
 }
-/* line 186, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .office-main a .office-main-icon9 {
   background-position: -388px 0;
 }
-/* line 189, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .office-main a label {
   display: inline-block;
   height: 20px;
@@ -233,14 +234,14 @@ body {
   margin-bottom: 15px;
 }
 
-/* line 199, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .content {
   width: 100%;
   height: 90%;
   min-height: 562px;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .focus-bg {
   position: absolute;
   z-index: -1;
@@ -253,7 +254,7 @@ body {
   transition: all 0.35s;
 }
 
-/* line 216, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .bg-toggle {
   width: 100%;
   height: 100%;
@@ -262,7 +263,7 @@ body {
   transition: opacity 0.5s;
 }
 
-/* line 223, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .search {
   position: absolute;
   left: 120px;
@@ -270,7 +271,7 @@ body {
   width: 700px;
   height: 50px;
 }
-/* line 229, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .search .logo {
   position: absolute;
   top: -5px;
@@ -280,20 +281,20 @@ body {
   height: 53px;
   background: url(../../../img/bing.png);
 }
-/* line 238, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .search form {
   display: inline-block;
   float: right;
 }
-/* line 241, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .search form input {
   width: 500px;
   height: 45px;
   line-height: 45px;
   font-size: 20px;
 }
-/* line 247, ../sass/style.scss */
-.search form button {
+/* line 248, ../sass/style.scss */
+.search form .submit {
   float: right;
   width: 50px;
   height: 50px;
@@ -304,14 +305,38 @@ body {
   background-color: #345391;
   border: 1px solid #345391;
 }
+/* line 259, ../sass/style.scss */
+.search form .prompt {
+  display: none;
+  position: absolute;
+  background-color: #FFF;
+  width: 552px;
+}
+/* line 264, ../sass/style.scss */
+.search form .prompt ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 267, ../sass/style.scss */
+.search form .prompt ul li {
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+/* line 273, ../sass/style.scss */
+.search form .prompt ul li:hover {
+  background-color: whitesmoke;
+}
 
-/* line 260, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 .tools {
   position: absolute;
   bottom: 70px;
   right: 30px;
 }
-/* line 264, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .tools span {
   display: inline-block;
   width: 41px;
@@ -320,20 +345,20 @@ body {
   background-repeat: no-repeat;
   margin-left: 15px;
 }
-/* line 272, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 .tools .shear {
   background-position: 0px 0px;
 }
-/* line 274, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .tools .shear:hover {
   background-position: -294px 0px;
 }
-/* line 276, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .tools .shear:hover .shear-content {
   opacity: 1;
   transform: translate(0, 0);
 }
-/* line 282, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .tools .ma {
   display: inline-block;
   position: relative;
@@ -344,11 +369,11 @@ body {
   margin-left: 15px;
   background-position: 1px 1px;
 }
-/* line 291, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .tools .ma:hover {
   background-position: -40px 0px;
 }
-/* line 294, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 .tools .ma .ma-main {
   display: none;
   background-color: rgba(51, 51, 51, 0.7);
@@ -359,18 +384,18 @@ body {
   left: -55px;
   text-align: center;
 }
-/* line 303, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 .tools .ma .ma-main .ma-main-pic {
   padding-top: 15px;
   width: 145px;
   height: 165px;
   border: 1px solid #fff;
 }
-/* line 309, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .tools .ma .ma-main .ma-main-pic label {
   color: #fff;
 }
-/* line 314, ../sass/style.scss */
+/* line 335, ../sass/style.scss */
 .tools .ma .line {
   display: none;
   position: absolute;
@@ -380,36 +405,36 @@ body {
   height: 118px;
   border-left: 1px solid #fff;
 }
-/* line 325, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .tools .turn-left {
   background-position: 0px -83px;
 }
-/* line 327, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 .tools .turn-left:hover {
   background-position: -294px -83px;
 }
-/* line 331, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 .tools .turn-right {
   background-position: 0px -125px;
 }
-/* line 333, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 .tools .turn-right:hover {
   background-position: -294px -125px;
 }
-/* line 337, ../sass/style.scss */
+/* line 358, ../sass/style.scss */
 .tools .inform {
   background-position: 0px -41px;
 }
-/* line 339, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
 .tools .inform:hover {
   background-position: -294px -41px;
 }
-/* line 343, ../sass/style.scss */
+/* line 364, ../sass/style.scss */
 .tools #shear {
   display: inline-block;
   height: 41px;
 }
-/* line 349, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 .tools .shear-content {
   transform: translate(10px, 0px);
   opacity: 0;
@@ -417,32 +442,32 @@ body {
   transition: opacity  0.35s;
   transition: transform  0.35s;
 }
-/* line 356, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .tools .qzone {
   background-position: 0px -294px;
 }
-/* line 358, ../sass/style.scss */
+/* line 379, ../sass/style.scss */
 .tools .qzone:hover {
   background-position: -294px -294px;
 }
-/* line 362, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 .tools .weibo {
   background-position: 0px -251px;
 }
-/* line 364, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 .tools .weibo:hover {
   background-position: -294px -251px;
 }
-/* line 368, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 .tools .wechat {
   background-position: 0px -210px;
 }
-/* line 370, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 .tools .wechat:hover {
   background-position: -294px -210px;
 }
 
-/* line 377, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 .footer {
   width: 100%;
   height: 38px;
@@ -451,14 +476,14 @@ body {
   left: 0;
   background-color: #333;
 }
-/* line 384, ../sass/style.scss */
+/* line 405, ../sass/style.scss */
 .footer ul {
   padding: 0;
   margin: 0;
   float: right;
   padding-right: 30px;
 }
-/* line 389, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 .footer ul li {
   list-style: none;
   display: inline-block;
@@ -467,12 +492,12 @@ body {
   color: #666;
   margin-right: 5px;
 }
-/* line 396, ../sass/style.scss */
+/* line 417, ../sass/style.scss */
 .footer ul li a {
   text-decoration: none;
   color: #666;
 }
-/* line 399, ../sass/style.scss */
+/* line 420, ../sass/style.scss */
 .footer ul li a:hover {
   text-decoration: underline;
 }
