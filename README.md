@@ -18,6 +18,7 @@ function getStyle(element, attr) {
 //注：如果要获取当前对象的颜色信息，IE返回的是16进制的'#ffffff'，而其他返回的是rgb(255,255,255) 
 ```
 <h3>js中left和offsetleft的区别</h3>
+
 ```
 offsetLeft 获取的是相对于父对象的左边距
 
